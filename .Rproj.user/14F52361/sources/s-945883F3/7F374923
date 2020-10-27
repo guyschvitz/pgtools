@@ -1,0 +1,25 @@
+{
+    "id": "7F374923",
+    "path": "~/Documents/ICR/subversion/misc/pgtools/R/pgRemoveLocks.R",
+    "project_path": "R/pgRemoveLocks.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1603794890610.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "11,13",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1603795085,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1603795085864,
+    "read_only": false,
+    "read_only_alternatives": []
+}
