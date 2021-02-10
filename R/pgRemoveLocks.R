@@ -12,7 +12,7 @@
 pgRemoveLocks <- function(conn, table){
   locks <- dbGetQuery(conn, statement =  paste0("select pid from pg_locks l join
   pg_class t on l.relation = t.oid where t.relkind = 'r' and t.relname LIKE '%",
-                                               table_name, "%';"))
+                                                table, "%';"))
   if(nrow(locks)==0){
     print("No locks found")
   } else {
