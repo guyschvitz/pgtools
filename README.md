@@ -4,7 +4,7 @@ This package contains two functions that make it easier to fetch and store data 
 ## Installation
 You can download and install the package from GitHub
 
-```{r}
+```r
 library(devtools)
 install_github(repo = "guyschvitz/pgtools")
 ```
@@ -12,7 +12,7 @@ install_github(repo = "guyschvitz/pgtools")
 ## pgViewTables: Search Tables in Database
 This function offers an easy way look up all tables in the database by matching them to a search term (using PostgreSQL pattern matching). You can search either by schema name, table name or both. Leaving the search term empty returns a dataframe of all tables in the database.
 
-```{r}
+```r
 library(pgtools)
 library(RPostgres)
 
@@ -56,9 +56,9 @@ pgViewTables(con, schema = "ras", table = "19")
 ```
 
 ## pgRemoveLocks: Remove locks on tables in database
-A common problem when trying to overwrite an existing PostgreSQL table is that the query hangs and never returns a result, which can cause your R session to crash entirely. This function finds and removes any locks in place on a given table.
+A common problem when trying to overwrite an existing PostgreSQL table is that the query hangs and never returns a result, which can cause your R session to crash entirely. This function finds and removes any locks in place on a given table so you can safely overwrite it.
 
-```{r}
+```r
 ## Remove locks on all tables that match 'mytable'
 pgRemoveLocks(con, 'mytable')
 # [1] "No locks found"
