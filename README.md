@@ -58,11 +58,12 @@ pgViewTables(con, schema = "ras", table = "19")
 ## pgRemoveLocks: Remove locks on tables in database
 A common problem when trying to overwrite an existing PostgreSQL table is that the query hangs and never returns a result, which can cause your R session to crash entirely. This function finds and removes any locks in place on a given table.
 
+```{r}
 ## Remove locks on all tables that match 'mytable'
 pgRemoveLocks(con, 'mytable')
 # [1] "No locks found"
 
 ## Overwrite 'mytable' with my.df
 DBI::dbWriteTable(con, name = Id(schema = "myschema", table = "mytable"), my.df, overwrite=T)
-
+```
 
