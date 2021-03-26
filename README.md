@@ -1,5 +1,5 @@
 # pgtools
-This package contains two functions that make it easier to fetch and store data from a Postgres database in R. 
+This package contains two functions that make it easier to fetch and store data from/to a Postgres database in R. 
 
 ## Installation
 You can download and install the package from GitHub
@@ -10,7 +10,7 @@ install_github(repo = "guyschvitz/pgtools")
 ```
 
 ## pgViewTables: Search Tables in Database
-This function offers an easy way look up all tables in the database by matching them to a search term (using PostgreSQL pattern matching). You can search either by schema name, table name or both. Leaving the search term empty returns a dataframe of all tables in the database.
+This function offers an easy way look up all tables in the database by matching them to a search term (using PostgreSQL pattern matching). You can search either by schema name, table name or both. Leaving both the "table" and "schema" fields empty returns a dataframe of all tables in the database.
 
 ```r
 library(pgtools)
